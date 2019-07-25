@@ -59,6 +59,8 @@ round(Number, Precision) ->
     P = math:pow(10, Precision),
     round(Number * P) / P.
 
+%% -----------------------------------------------------------------------------
+%% Tests
 simple_test() ->
     ?assert(find_point([1, 2]) =:= [1.5]),
     ?assert(find_point([0, 10, 20, 30]) =:= [3.82, 15.0, 26.18]).
